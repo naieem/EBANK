@@ -1,0 +1,23 @@
+<md-dialog aria-label="Edit expense" class="md-padding">
+  <form name="">
+    <md-input-container class="md-block">
+      <label>Title</label>
+      <input ng-model="expense.title" placeholder="title" value="">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label>Expense</label>
+      <input ng-model="expense.expense" placeholder="title" value="">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <label>Date</label>
+      <md-datepicker ng-model="expense.date" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
+    </md-input-container>
+
+    <md-button class="md-primary md-raised" ng-click="update($event)" >
+      Update
+    </md-button>
+
+  </form>
+</md-dialog>

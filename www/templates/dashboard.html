@@ -1,0 +1,49 @@
+<ion-view view-title="Dashboard">
+  <ion-content>
+    <div class="list">
+      <!-- year card -->
+      <md-card flex layout="column" layout-align="center center">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Select Year</span>
+          </md-card-title-text>
+        </md-card-title>
+
+        <md-card-content>
+          <div layout="row">
+            <md-input-container>
+              <label>Year</label>
+              <md-select ng-model="find.year">
+                <md-option ng-repeat="years in year" ng-value="years">
+                  {{years}}
+                </md-option>
+              </md-select>
+            </md-input-container>
+          </div>
+        </md-card-content>
+      </md-card>
+      <!-- month card -->
+      <md-card flex layout="column" layout-align="center center">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Select Month</span>
+          </md-card-title-text>
+        </md-card-title>
+
+        <md-card-content>
+          <div layout="row">
+            <md-input-container>
+              <label>Month</label>
+              <md-select ng-model="find.month">
+                <md-option ng-repeat="month in months" ng-value="month">
+                  {{month}}
+                </md-option>
+              </md-select>
+            </md-input-container>
+          </div>
+        </md-card-content>
+      </md-card>
+      <p layout="column"><md-button class="md-raised md-primary" ng-click="search(find)">Search</md-button></p>
+    </div>
+  </ion-content>
+</ion-view>

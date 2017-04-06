@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.ebank934557" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>EBANK</name>
+  <description>
+  It is an E-Bank which means it stores all economic transactions of a families day to day  expenses
+  </description>
+  <author email="naieemsupto@gmail.com" href="http://naieem.me/">
+      Naieem Mahmud Supto
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="SplashScreenDelay" value="2000"/>
+  <preference name="FadeSplashScreenDuration" value="2000"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+
+  <plugin name="cordova-plugin-app-event" />
+  <plugin name="cordova-plugin-console" />
+  <plugin name="cordova-plugin-device" />
+  <plugin name="cordova-plugin-splashscreen" />
+  <plugin name="cordova-plugin-statusbar" />
+  <plugin name="cordova-plugin-whitelist" />
+  <plugin name="cordova-plugin-keyboard" />
+
+
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+</widget>
